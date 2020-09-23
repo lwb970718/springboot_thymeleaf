@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <thead>
+    <th>ID</th>
+    <th>名字</th>
+    </thead>
+    <tbody>
+    <tr th:each="user,iterStat:${users}">
+        <td th:text="${user.id}"></td>
+        <td th:text="${user.name}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

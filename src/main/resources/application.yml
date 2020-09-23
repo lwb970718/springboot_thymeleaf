@@ -1,0 +1,5 @@
+server:
+  port: 8080
+spring:
+  thymeleaf:  #开始thymeleaf设置
+    cache: false    #禁用模板缓存
